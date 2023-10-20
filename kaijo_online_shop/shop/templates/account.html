@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+        <title>Manage account</title>
+        <style>
+            body{
+                background-color: beige;
+            }
+            .btn-group .button {
+                background-color: black; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                cursor: pointer;
+                float: right;
+            }
+
+            .btn-group .button:hover {
+                background-color: white;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Manage your account info</h1>
+        <hr>
+        <br>
+        <div class="btn-group">
+            <a href="http://127.0.0.1:8000/cart.html"><button class="button">Cart</button></a>
+            <a href="http://127.0.0.1:8000/sign_in.html"><button class="button">Sign in</button></a>
+            <a href="http://127.0.0.1:8000/register.html"><button class="button">Register</button></a>
+            <a href="http://127.0.0.1:8000/"><button class="button">Menu</button></a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 style="text-align: center;">Webpage info</h1>
+        <br>
+        <br>
+        <br>
+        <h3>If you already have account please sign in</h3>
+        <br>
+        <br>
+        <h3>If not please register</h3>
+        <br>
+        <br>
+        <h3>Or if you want to manage your products in cart please click on "Cart" button</h3>
+
+    </body>    

@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+        <title>Shop</title>
+    </head>
+    <body>
+        <style>
+            
+        </style>
+
+        <ul>
+            <li><img src="{% static 'logo.png' %}" alt="logo" class="logo"><h1>Kaijo shop</h1></li>
+        </ul>
+        <hr>
+        <div>
+            <input class="search" type="text" placeholder="Search..">
+            <div class="btn-group">
+                <a href="privacy.html"><button class="button">Terms & Privacy</button></a>
+                <a href="contact.html"><button class="button">Contact Us</button></a>
+                <a href="account.html"><button class="button">Account</button></a>
+                <a href="deals.html"><button class="button">Deals</button></a>
+                <a href="http://127.0.0.1:8000/"><button class="button" >Menu</button></a>  
+            </div>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <a href="cloth.html">
+                <img src="{% static 'cloth.jpg' %}" alt="cloth photo">
+                <button class="btn">Clothing</button>
+            </a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <a href="toys.html">
+                <img src="{% static 'toys.jpg' %}">
+                <button class="btn">Toys</button>
+            </a>    
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <a href="perfume.html">
+                <img src="{% static 'perfume.jpg' %}" alt="perfume">
+                <button class="btn">Perfume</button>
+            </a> 
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <a href="electrics.html">
+                <img src="{% static 'electrics.jpg' %}" alt="Electronic devises">
+                <button class="btn">Electronic Devises</button>
+            </a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="ending">
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>From our comunity. Many thanks for choosing and using kaijo comany.</p>
+            <p>Site by: Kaijo Company.</p>
+            <p>Many thanks to our developers: Luka Gujabidze, Druncha Fumfuladze, Popo Bambukadze, Virtxunia Kudadze.</p>
+            <p>Designers: Lekuna Dzvaladze.</p>
+            <img src="{% static 'logo.png' %}" alt="logo"><p>Kaijo Company</p>
+            <a href="about.html"><p>About info</p></a>
+        </div>
+
+    </body>
+</html>

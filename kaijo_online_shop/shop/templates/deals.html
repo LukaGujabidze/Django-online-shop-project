@@ -1,0 +1,213 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+        <title>Deals</title>
+        <style>
+            body {
+              font-family: Arial, Helvetica, sans-serif;
+              margin: 0;
+            }
+            
+            html {
+              box-sizing: border-box;
+            }
+            
+            *, *:before, *:after {
+              box-sizing: inherit;
+            }
+            
+            .column {
+              float: left;
+              width: 33.3%;
+              margin-bottom: 16px;
+              padding: 0 8px;
+            }
+            
+            .card1 {
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+              margin: 8px;
+            }
+            
+            .about-section {
+              padding: 50px;
+              text-align: center;
+              background-color: #474e5d;
+              color: white;
+            }
+            
+            .container {
+              padding: 0 16px;
+            }
+            
+            .container::after, .row::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+            
+            .title {
+              color: grey;
+            }
+            
+            .button {
+              border: none;
+              outline: 0;
+              display: inline-block;
+              padding: 8px;
+              color: white;
+              background-color: #000;
+              text-align: center;
+              cursor: pointer;
+              width: 100%;
+            }
+            
+            .button:hover {
+              background-color: #555;
+            }
+            
+            @media screen and (max-width: 650px) {
+              .column {
+                width: 100%;
+                display: block;
+              }
+            }
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+                }
+
+            .price {
+                color: grey;
+                font-size: 22px;
+            }
+
+            .card button {
+                border: none;
+                outline: 0;
+                padding: 12px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+            }
+
+            .card button:hover {
+                opacity: 0.7;
+            }
+            .discount
+            {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        
+
+        <h1 style="text-align: center;">Deals To our products:</h1>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="column">
+                <div class="card1">
+                    <div class="card">
+                        <img src="{% static 'shoes1.jpg' %}" alt="shoes">
+                        <h1>Casual sport shoes for women</h1>
+                        <p class="prise">90$</p>
+                        <h1 class="discount"><i>-30% Discount!</i></h1>
+                        <p>Casual sport shoes, comportable and profitable.</p>
+                        <p><button>Add to cart</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card1">
+                    <div class="card">
+                        <img src="{% static 'shirt1.jpg' %}" alt="shirt">
+                        <h1>Classic shirt for men</h1>
+                        <p class="prise">40$</p>
+                        <h1><i class="discount">-20% Discount!</i></h1>
+                        <p>Classical soft and comfortable shirt for men</p>
+                        <p><button>Add to cart</button></p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="column">
+                <div class="card1">
+                    <div class="card">
+                        <img src="{% static 'shirt2.jpg' %}" alt="cloth">
+                        <h1>Soft orange shirt</h1>
+                        <p class="prise">50$</p>
+                        <h1><i class="discount">-10% Discount!</i></h1>
+                        <p>Soft,comfortable orange shirt for men and women</p>
+                        <br>
+                        <p><button>Add to cart</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="column">
+                <div class="card1">
+                    <div class="card">
+                        <img src="{% static 'ps4.jpg' %}" alt="Jacket">
+                        <h1>Playstation 4</h1>
+                        <p class="prise">400$</p>
+                        <h1 class="discount"><i>-40% Discount!</i></h1>
+                        <p>Playstation 4 with 1 joystick</p>
+                        <br>
+                        <br>
+                        <br>
+                        <p><button>Add to cart</button></p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card1">
+                    <div class="card">
+                        <img src="{% static 'lego.jpg' %}" alt="shirt">
+                        <h1>Lego Technic Jeep</h1>
+                        <p class="prise">120$</p>
+                        <h1><i class="discount">-20% Discount!</i></h1>
+                        <p>Lego Technic Jeep 9 years and up</p>
+                        <br>
+                        <p><button>Add to cart</button></p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="column">
+                <div class="card1">
+                    <div class="card">
+                        <img src="{% static 'perfume1.jpg' %}" alt="cloth">
+                        <h1>Perfume Coco channel</h1>
+                        <p class="prise">220$</p>
+                        <h1><i class="discount">-30% Discount!</i></h1>
+                        <p>Coco channel perfume for women</p>
+                        <br>
+                        <p><button>Add to cart</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </body>    
